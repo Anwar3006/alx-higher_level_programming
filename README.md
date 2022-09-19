@@ -26,5 +26,4 @@ This repository contains programs written for the higher-level programming track
 * 0x15. Javascript - Web JQuery
 
 ## Author
-___
 * Mohammed Anwar-Sadat Mamudu
