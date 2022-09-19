@@ -53,8 +53,8 @@ Completion of this source code.
 
 
 * Linked list cycle
-    * 10-check_cycle.c: C function that checks if a linked list contains a cycle.
+    * [10-check_cycle.c](https://github.com/Anwar3006/alx-higher_level_programming/blob/main/0x00-python-hello_world/10-check_cycle.c): C function that checks if a linked list contains a cycle.
     Returns 0 if there is no cycle and 1 if there is.
     Helper files:
     linked_lists.c: C functions handling linked lists for testing 10-check_cycle.c (provided by Holberton School).
-    lists.h: Header file containing definitions and prototypes for all types and functions used in linked_lists.c and 10-check_cycle.c.
+    [lists.h](https://github.com/Anwar3006/alx-higher_level_programming/blob/main/0x00-python-hello_world/lists.h): Header file containing definitions and prototypes for all types and functions used in linked_lists.c and 10-check_cycle.c.
