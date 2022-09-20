@@ -5,4 +5,4 @@ for characters in range(97, 123):
     if chr(characters) == 'e' or chr(characters) == 'q':
         continue
     else:
-        print("{}".format(chr(characters)), end="")
+        print("{:c}".format(characters), end="")
