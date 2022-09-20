@@ -8,4 +8,3 @@ for number_i in range(0, 10):
             print("{}{}".format(number_i, number_j))
         else:
             print(f"{number_i}{number_j}", end=", ")
-       
