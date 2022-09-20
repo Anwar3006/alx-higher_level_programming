@@ -3,4 +3,4 @@
 
 def pow(a, b):
     """Return the result of a to the power b."""
-    print(a ** b)
+    return a ** b
