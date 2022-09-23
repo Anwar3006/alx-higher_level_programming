@@ -12,7 +12,6 @@ if __name__ == "__main__":
     a = int(argv[1])
     b = int(argv[3])
    
-    # for i in range(Quant):
     if argv[2] == '+':
         print("{} + {} = {}".format(a, b, cal.add(a, b)))
     elif argv[2] == '-':
