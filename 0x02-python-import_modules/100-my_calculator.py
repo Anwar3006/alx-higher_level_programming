@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 
 if __name__ == "__main__":
+    """Handle basic arithmetic operations."""
     import calculator_1 as cal
     from sys import argv
 
