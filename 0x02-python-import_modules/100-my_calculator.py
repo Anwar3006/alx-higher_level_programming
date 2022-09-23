@@ -1,9 +1,10 @@
 #!/usr/bin/python3
+import calculator_1 as cal
+from sys import argv
 
 if __name__ == "__main__":
     """Handle basic arithmetic operations."""
-    import calculator_1 as cal
-    from sys import argv
+   
 
     Quant = len(argv) - 1
     if Quant != 3:
