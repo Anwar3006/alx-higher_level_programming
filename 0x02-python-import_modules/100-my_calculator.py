@@ -5,7 +5,6 @@ from sys import argv
 if __name__ == "__main__":
     """Handle basic arithmetic operations."""
 
-
     Quant = len(argv) - 1
     if Quant != 3:
         print("Usage: ./100-my_calculator.py <a> <operator> <b>")
