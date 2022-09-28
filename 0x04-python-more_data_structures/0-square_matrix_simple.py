@@ -6,8 +6,5 @@ def square_matrix_simple(matrix=[]):
     squares = []
     if len(matrix) > 0:
         for elements in matrix:
-            l = []
-            for x in elements:
-                l.append(x ** 2)
-            squares.append(l)
+            squares.append(list(map(lambda x: x ** 2, elements)))
     return squares
