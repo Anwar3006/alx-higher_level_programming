@@ -13,10 +13,10 @@ class Square:
         """Function to be used for getting/retrieving
         the private instance attribute(size) value"""
         return (self.__size)
-    
+
     @size.setter
     def size(self, value):
-        """Function to be used for setting 
+        """Function to be used for setting
         the private instance attribute value"""
         if type(value) is not int:
             raise TypeError("size must be an integer")
