@@ -22,7 +22,7 @@ class Square:
 
     def area(self):
         return (self.__size * self.__size)
-    
+
     def my_print(self):
         for i in range(1, self.__size + 1):
             for j in range(1, self.__size + 1):
