@@ -85,7 +85,7 @@ class Rectangle:
         Args:
             size (int)= size of square"""
         Rectangle.__width == Rectangle.__height == size
-        return cls(size)
+        return (cls(size, size))
 
     def __str__(self):
         """Return the printable representation of the Rectangle.
