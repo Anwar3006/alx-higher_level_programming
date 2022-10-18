@@ -83,7 +83,7 @@ class Rectangle:
     def square(cls, size=0):
         """Function for Square
         Args:
-            """
+            size (int)= size of square"""
         Rectangle.__width == Rectangle.__height == size
         return cls(size)
 
