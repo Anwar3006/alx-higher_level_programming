@@ -57,7 +57,7 @@ class Rectangle:
         """Return the perimeter of the Rectangle."""
         if self.__width == 0 or self.__height == 0:
             return (0)
-        return (2(self.__width) + 2(self.__height))
+        return ((self.__width * 2) + (self.__height * 2))
 
     @staticmethod
     def bigger_or_equal(rect_1, rect_2):
@@ -77,7 +77,7 @@ class Rectangle:
         if (rect_1.area() >= rect_2.area()):
             return (rect_1)
         else:
-            return (rect_1)
+            return (rect_2)
 
     @classmethod
     def square(cls, size=0):
