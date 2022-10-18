@@ -57,7 +57,7 @@ class Rectangle:
         """Return the perimeter of the Rectangle."""
         if self.__width == 0 or self.__height == 0:
             return (0)
-        return (2(self.__width) + 2(self.__height))
+        return ((self.__width * 2) + (self.__height * 2))
 
     @staticmethod
     def bigger_or_equal(rect_1, rect_2):
@@ -76,8 +76,7 @@ class Rectangle:
 
         if (rect_1.area() >= rect_2.area()):
             return (rect_1)
-        else:
-            return (rect_1)
+        return (rect_2)
 
     def __str__(self):
         """Return the printable representation of the Rectangle.
@@ -102,3 +101,22 @@ class Rectangle:
     def __del__(self):
         """Return a message when object instance is deleted"""
         print("Bye Rectangle...")
+
+
+
+
+my_rectangle_1 = Rectangle(8, 4)
+my_rectangle_2 = Rectangle(2, 3)
+
+if my_rectangle_1 is Rectangle.bigger_or_equal(my_rectangle_1, my_rectangle_2):
+    print("my_rectangle_1 is bigger or equal to my_rectangle_2")
+else:
+    print("my_rectangle_2 is bigger than my_rectangle_1")
+
+
+my_rectangle_2.width = 10
+my_rectangle_2.height = 5
+if my_rectangle_1 is Rectangle.bigger_or_equal(my_rectangle_1, my_rectangle_2):
+    print("my_rectangle_1 is bigger or equal to my_rectangle_2")
+else:
+    print("my_rectangle_2 is bigger than my_rectangle_1")

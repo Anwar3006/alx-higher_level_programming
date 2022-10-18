@@ -84,7 +84,6 @@ class Rectangle:
         """Function for Square
         Args:
             size (int)= size of square"""
-        Rectangle.__width == Rectangle.__height == size
         return (cls(size, size))
 
     def __str__(self):
