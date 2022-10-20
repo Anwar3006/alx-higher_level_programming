@@ -22,12 +22,13 @@ def matrix_divided(matrix, div):
                 for ele in [num for row in matrix for num in row])):
         raise TypeError("matrix must be a matrix (list of lists) of\
          integers/floats")
-    for row in matrix:
-        if len(matrix(row)) != len(matrix(row + 1)):
-            raise TypeError("Each row of the matrix must have the same size")
-    if type(div) is not int or type(div) is not float:
+    if not all(len(row) == len(matrix[0]) for row in matrix):
+        raise TypeError("Each row of the matrix must have the same size")
+
+    if not isinstance(div, int) and not isinstance(div, float):
         raise TypeError("div must be a number")
-    elif div == 0:
+
+    if div == 0:
         raise ZeroDivisionError("division by zero")
     
     return [list(map(lambda x: round(x / div, 2), row) for row in matrix)]
