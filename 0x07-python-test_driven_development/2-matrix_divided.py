@@ -16,8 +16,10 @@ def matrix_divided(matrix, div):
         A new matrix representing the result of the division.
     """
 
-    if matrix is not type(list) and matrix is not type(int) \
-        or matrix is not type(float):
+    if (not isinstance(matrix, list) or matrix == [] or
+            not all(isinstance(row, list) for row in matrix) or
+            not all((isinstance(ele, int) or isinstance(ele, float))
+                for ele in [num for row in matrix for num in row])):
         raise TypeError("matrix must be a matrix (list of lists) of\
          integers/floats")
     for row in matrix:
