@@ -16,7 +16,7 @@ def matrix_divided(matrix, div):
         A new matrix representing the result of the division.
     """
 
-    if matrix is not type(list(int)) or matrix is not type(list(float)):
+    if matrix is not type(int) or matrix is not type(float):
         raise TypeError("matrix must be a matrix (list of lists) of\
          integers/floats")
     for row in matrix:
