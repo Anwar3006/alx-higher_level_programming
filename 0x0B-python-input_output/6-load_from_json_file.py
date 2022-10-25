@@ -10,5 +10,5 @@ def load_from_json_file(filename):
 
     Return
         Normal string representation of my_obj"""
-    with open(filename) as f:
-        j.load(f)
+    with open(filename, encoding='utf-8') as f:
+        return j.load(f)
