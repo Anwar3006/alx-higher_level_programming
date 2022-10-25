@@ -10,4 +10,4 @@ def to_json_string(my_obj):
 
     Return
         Normal string representation of my_obj"""
-    return (j.load(my_obj))
+    return (j.loads(my_obj))

@@ -7,8 +7,8 @@ def load_from_json_file(filename):
     """Function creates an Object from a “JSON file”
     Args:
         my_obj (str): JSON string object to be decoded
-        
+
     Return
         Normal string representation of my_obj"""
-    with open(filename, encoding='utf-8') as f:
+    with open(filename) as f:
         j.load(f)
