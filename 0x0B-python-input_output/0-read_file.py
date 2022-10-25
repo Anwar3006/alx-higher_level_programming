@@ -6,7 +6,7 @@ def read_file(filename=""):
     """Reads a text file
     Args:
         filename (str): name of file
-    
+
     Return
         Content of @filename"""
     with open(filename, encoding="utf-8") as f:
