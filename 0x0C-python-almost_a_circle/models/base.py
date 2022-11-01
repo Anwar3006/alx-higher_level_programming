@@ -2,6 +2,7 @@
 """Defines a Base class"""
 import json as j
 
+
 class Base:
     """"Represents a base model
 
