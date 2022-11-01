@@ -19,13 +19,13 @@ class Square(Rectangle):
     @property
     def size(self):
         """Getter method for private instance attribute"""
-        return self.width
+        return self.__width
 
     @size.setter
     def size(self, value):
         """Setter method for private instance attribute"""
-        self.width = value
-        self.height = value
+        self.__width = value
+        self.__height = value
 
     def update(self, *args, **kwargs):
         """Update the Square.
