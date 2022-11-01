@@ -1,9 +1,6 @@
 #!/usr/bin/python3
 """Defines a Rectangle class that inherits from Base"""
-from re import X
-
-
-Base = __import__('base').Base
+from models.base import Base
 
 
 class Rectangle(Base):
@@ -131,7 +128,7 @@ class Rectangle(Base):
                 elif a == 4:
                     self.y = arg
                 a += 1
-        
+
         elif kwargs and len(kwargs) != 0:
             for key, value in kwargs.items():
                 if key == 'id':
@@ -150,7 +147,8 @@ class Rectangle(Base):
 
     def to_dictionary(self):
         """Returns dictionary representation"""
-        return{
+
+        return {
             'id': self.id,
             'width': self.width,
             'height': self.height,
@@ -160,6 +158,7 @@ class Rectangle(Base):
 
     def __str__(self):
         """Return string representation"""
-        return ("[{}] ({}) {}/{} - {}/{}"\
-            .format(self.__class__.__name__, self.id, \
-                self.x, self.y, self.width, self.height))
+
+        return "[{}] ({}) {}/{} - {}/{}".format(self.__class__.__name__,
+                                                self.id, self.x, self.y,
+                                                self.width, self.height)
