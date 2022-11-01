@@ -94,7 +94,7 @@ class Rectangle(Base):
             print("")
             return
 
-        [print() for y in (self.y)]
+        [print() for y in range(self.y)]
         for h in range(self.height):
             [print(" ", end="") for x in (self.x)]
             [print("#", end="")for w in (self.width)]
