@@ -1,3 +1,3 @@
 -- A script that inserts a new row in the table first_table
 INSERT INTO `first_table`(`id`, `name`)
-    VALUES (`id`, 'Best School');
+    VALUES (89, 'Best School');
