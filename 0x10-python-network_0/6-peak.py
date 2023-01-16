@@ -1,5 +1,6 @@
 #!/usr/bin/python3
-# 
+"""Defines a peak-finding algorithm."""
+
 
 def find_peak(list_of_integers):
     """Funtion takes a list as an argument and finds the largest number/peak"""
@@ -22,7 +23,6 @@ def find_peak(list_of_integers):
     else:
         return find_peak(list_of_integers[mid + 1:])
 
-    
-    
+
 print(find_peak([1, 2, 4, 6, 3]))
 print(find_peak([4, 2, 1, 2, 3, 1]))
