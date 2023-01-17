@@ -1,10 +1,12 @@
 #!/usr/bin/python3
-""" """
-from urllib.request import urlopen
+"""Fetches https://intranet.hbtn.io/status"""
+from urllib.request import urlopen, Request
 
 
 if __name__ == "__main__":
-    with urlopen('https://alx-intranet.hbtn.io/status') as response:
+    req = Request('https://alx-intranet.hbtn.io/status')
+
+    with urlopen(req) as response:
         data = response.read()
         content_decode = data.decode('UTF-8')
 
