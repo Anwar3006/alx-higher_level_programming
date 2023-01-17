@@ -1,9 +1,10 @@
 #!/usr/bin/python3
 """ """
-import urllib.request
+from urllib.request import urlopen
+
 
 if __name__ == "__main__":
-    with urllib.request.urlopen('https://alx-intranet.hbtn.io/status') as response:
+    with urlopen('https://alx-intranet.hbtn.io/status') as response:
         data = response.read()
         content_decode = data.decode('UTF-8')
 
