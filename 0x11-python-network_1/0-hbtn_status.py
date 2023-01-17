@@ -12,5 +12,5 @@ if __name__ == "__main__":
 
     print('Body Response:')
     print('\t type: {}'.format(type(data)))
-    print('\t content: {}'.format(len(data)))
+    print('\t content: {}'.format(data))
     print('\t utf8 content: {}'.format(content_decode))
