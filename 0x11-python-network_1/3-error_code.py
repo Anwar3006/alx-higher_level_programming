@@ -1,5 +1,8 @@
 #!/usr/bin/python3
-""" """
+"""Sends a request to a given URL and displays the response body.
+Usage: ./3-error_code.py <URL>
+  - Handles HTTP errors.
+"""
 from urllib.request import Request, urlopen
 from urllib.error import HTTPError
 from sys import argv
