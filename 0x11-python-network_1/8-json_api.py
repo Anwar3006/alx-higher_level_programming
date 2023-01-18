@@ -12,7 +12,7 @@ if __name__ == "__main__":
         print('No result')
 
     try:
-        payload = {'q' : q}
+        payload = {'q': q}
         r = requests.post('http://0.0.0.0:5000/search_user', payload).json()
 
         print('[{id}] {name}'.format(id=r.get('id'), name=r.get('name')))
