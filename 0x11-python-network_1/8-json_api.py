@@ -8,7 +8,7 @@ from sys import argv
 
 if __name__ == "__main__":
     q = argv[1]
-    if q == None or type(q) != str:
+    if q == "" or type(q) != str:
         print('No result')
 
     try:
